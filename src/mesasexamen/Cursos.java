@@ -1,18 +1,9 @@
-package mesasexamen;
+package mesasexamen;//GEN-FIRST:event_TablaMouseClicked
+//GEN-LAST:event_TablaMouseClicked
 
-
-import mesasexamen.Conexion;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.ComboBoxModel;
-import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -36,7 +27,7 @@ public class Cursos extends javax.swing.JFrame {
 
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -327,59 +318,59 @@ public class Cursos extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void materiatxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materiatxtActionPerformed
+    private void materiatxtActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }//GEN-LAST:event_materiatxtActionPerformed
+    }                                          
 
-    private void cursotxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cursotxtActionPerformed
+    private void cursotxtActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-    }//GEN-LAST:event_cursotxtActionPerformed
+    }                                        
 
-    private void agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarActionPerformed
+    private void agregarActionPerformed(java.awt.event.ActionEvent evt) {                                        
         Agregar();
         Nuevo();
         buscar();
-    }//GEN-LAST:event_agregarActionPerformed
+    }                                       
 
-    private void eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarActionPerformed
+    private void eliminarActionPerformed(java.awt.event.ActionEvent evt) {                                         
         Eliminar();
         Nuevo();
         buscar();
-    }//GEN-LAST:event_eliminarActionPerformed
+    }                                        
 
-    private void modificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificarActionPerformed
+    private void modificarActionPerformed(java.awt.event.ActionEvent evt) {                                          
         Modificar();
         Nuevo();
         buscar();
-    }//GEN-LAST:event_modificarActionPerformed
+    }                                         
 
-    private void nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevoActionPerformed
+    private void nuevoActionPerformed(java.awt.event.ActionEvent evt) {                                      
         Nuevo();
-    }//GEN-LAST:event_nuevoActionPerformed
+    }                                     
 
-    private void AoDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AoDActionPerformed
+    private void AoDActionPerformed(java.awt.event.ActionEvent evt) {                                    
         Cambio();
         Seleccionar();
         buscar();
-    }//GEN-LAST:event_AoDActionPerformed
+    }                                   
 
-    private void buscartxtCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_buscartxtCaretUpdate
+    private void buscartxtCaretUpdate(javax.swing.event.CaretEvent evt) {                                      
         if(especif.equals("")){
             buscar();
         }else{
             buscarestricto();    
         }
-    }//GEN-LAST:event_buscartxtCaretUpdate
+    }                                     
 
-    private void ComboItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_ComboItemStateChanged
+    private void ComboItemStateChanged(java.awt.event.ItemEvent evt) {                                       
         Seleccionar();
         limpiasegura();
         buscar();   
-    }//GEN-LAST:event_ComboItemStateChanged
+    }                                      
 
-    private void especificadorItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_especificadorItemStateChanged
+    private void especificadorItemStateChanged(java.awt.event.ItemEvent evt) {                                               
         Especificar();
         limpiasegura();
         if(especif.equals("")){
@@ -387,9 +378,9 @@ public class Cursos extends javax.swing.JFrame {
         }else{
             buscarestricto();    
         }
-    }//GEN-LAST:event_especificadorItemStateChanged
+    }                                              
 
-    private void TablaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaMouseClicked
+    private void TablaMouseClicked(java.awt.event.MouseEvent evt) {                                   
         int fila = Tabla.getSelectedRow();
             
             if(fila==-1){
@@ -409,13 +400,13 @@ public class Cursos extends javax.swing.JFrame {
                 horariotxt.setText(""+horario);
                 
             }
-    }//GEN-LAST:event_TablaMouseClicked
+    }                                  
 
-    private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
+    private void volverActionPerformed(java.awt.event.ActionEvent evt) {                                       
         jtable administrar = new jtable();
         administrar.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_volverActionPerformed
+    }                                      
 
     void Agregar(){
         
@@ -694,7 +685,7 @@ public class Cursos extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton AoD;
     private javax.swing.JComboBox<String> Combo;
     private javax.swing.JTextField IPmateriastxt;
@@ -722,5 +713,5 @@ public class Cursos extends javax.swing.JFrame {
     private javax.swing.JButton nuevo;
     private javax.swing.JTextField profesorestxt;
     private javax.swing.JButton volver;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
