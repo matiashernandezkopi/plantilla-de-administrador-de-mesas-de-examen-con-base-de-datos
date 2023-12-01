@@ -445,7 +445,7 @@ public class jtable extends javax.swing.JFrame {
     private void TablaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaMouseClicked
             int fila = Tabla.getSelectedRow();
             if(fila==-1){
-            JOptionPane.showMessageDialog(null, "No se selecciono fila");
+                JOptionPane.showMessageDialog(null, "No se selecciono fila");
             }else{
                 String nombre = Tabla.getValueAt(fila, 0) .toString();
                 dni = Integer.parseInt((String)Tabla.getValueAt(fila, 1) .toString());
@@ -601,12 +601,12 @@ public class jtable extends javax.swing.JFrame {
             while (combocursos.getItemCount()!=1){
                     combocursos.removeItemAt(1);
 
-                }
+            }
 
-                for(int x=0; x <= (debesmateriassolo.size()-1);x++){
-                    combocursos.addItem(debesmateriassolo.get(x));
+            for(int x=0; x <= (debesmateriassolo.size()-1);x++){
+                combocursos.addItem(debesmateriassolo.get(x));
 
-                }
+            }
         
             especifcurso= false;
         }
@@ -650,7 +650,7 @@ public class jtable extends javax.swing.JFrame {
         if(especificador.getSelectedItem().equals("---")){
             especif= "";
         }else{
-        especif = (String) especificador.getSelectedItem();
+            especif = (String) especificador.getSelectedItem();
         }
     }
     
@@ -658,7 +658,7 @@ public class jtable extends javax.swing.JFrame {
         if(Combo.getSelectedItem().equals("---")){
             orden= " ";
         }else{
-        orden = "order by "+(String) Combo.getSelectedItem()+" "+aod;
+            orden = "order by "+(String) Combo.getSelectedItem()+" "+aod;
         }
     }
     
@@ -686,9 +686,9 @@ public class jtable extends javax.swing.JFrame {
             } else{
                 
                 String sql = "Update alumnos set nombre='"+nombre+"', dni='"+dni+"', curso='"+curso+"', debe='"+debe+"' where dni="+dni;
-            conet = con1.getConnection();
-            st = conet.createStatement();
-            st.executeUpdate(sql);
+                conet = con1.getConnection();
+                st = conet.createStatement();
+                st.executeUpdate(sql);
                 JOptionPane.showMessageDialog(null, "Alumno modificado");
                 limpiarTabla();
             }
